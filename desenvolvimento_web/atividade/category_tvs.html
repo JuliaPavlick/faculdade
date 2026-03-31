@@ -1,32 +1,107 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initil-scale=1.0" />
-  <title>TVs</title>
+    <meta charset="UTF-8">
+    <title>TVs</title>
+    <link rel="stylesheet" href="./scr/css/style.css">
 </head>
 
 <body class="page-category-tvs">
-  <h1>Categoria de produtos</h1>
-  <h2>TVs</h2>
-  <ol id="primary-list">
-    <li>
-      <img src="./img/tv_samsung.jpg" alt="Imagem de televisão modelo samsung" />
-      <h3>Modelo: samsung</h3>
-      <h4>R$ 2.000,00</h4>
-      <h5>R$ 200,00 em 10x</h5>
-      <a target="_blank" href="https://www.samsung.com/br/tvs/">Detalhes</a>
-    </li>
-    <li>
-      <img src="./img/tv_lg.jpeg" alt="Imagem de televisão modelo LG" />
-      <h3>Modelo: LG</h3>
-      <h4>R$ 5.000,00</h4>
-      <h5>R$ 500,00 em 10x</h5>
-      <a target="_blank" href="https://www.lg.com/br/tvs-e-soundbars/qned-evo/">Detalhes</a>
-    </li>
-  </ol>
-  <p><a href="./products.html">Voltar</a></p>
-</body>
 
+<header>
+    <p>Vendas de TVs e acessórios online</p>
+
+    <nav>
+        <ul>
+            <li><a href="products.html">Produtos</a></li>
+            <li><a href="category_tvs.html">TVs</a></li>
+            <li><a href="category_acessories.html">Acessórios</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<h1>Categoria de produtos</h1>
+<h2>TVs</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Imagem</th>
+            <th>Modelo</th>
+            <th>Preço</th>
+            <th>Parcelado</th>
+            <th>Detalhes</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>
+                <picture>
+                    <img src="https://via.placeholder.com/150" alt="TV 1">
+                </picture>
+            </td>
+            <td>Smart TV LG 50"</td>
+            <td>R$ 2500,00</td>
+            <td>10x de R$250</td>
+            <td><a href="https://www.lg.com" target="_blank">Ver</a></td>
+        </tr>
+
+        <tr>
+            <td>
+                <picture>
+                    <img src="https://via.placeholder.com/150" alt="TV 2">
+                </picture>
+            </td>
+            <td>Smart TV Samsung 55"</td>
+            <td>R$ 3000,00</td>
+            <td>10x de R$300</td>
+            <td><a href="https://www.samsung.com" target="_blank">Ver</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<form>
+    <label>Nome:</label>
+    <input type="text" required><br><br>
+
+    <label>Email:</label>
+    <input type="email" required><br><br>
+
+    <label>Marca:</label>
+    <input list="marcas">
+    <datalist id="marcas">
+        <option value="LG">
+        <option value="Samsung">
+    </datalist>
+
+    <br><br>
+
+    <button type="reset">Limpar</button>
+    <button type="submit">Enviar</button>
+</form>
+
+<h3>Perguntas mais frequentes</h3>
+
+<details>
+    <summary>Tem garantia?</summary>
+    <p>Sim, todos os produtos possuem garantia.</p>
+</details>
+
+<details>
+    <summary>Entrega é rápida?</summary>
+    <p>Sim, entregamos para todo o Brasil.</p>
+</details>
+
+</main>
+
+<footer>
+    <small>Todos os direitos reservados</small>
+</footer>
+
+</body>
 </html>
